@@ -1,0 +1,74 @@
+{
+  "expo": {
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0B0E14",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCHt73oz8HImcMWdFErcbxJ1bbtlIFboRE"
+        }
+      },
+      "package": "com.geopro.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
+    "icon": "./assets/images/icon.png",
+    "ios": {
+      "bundleIdentifier": "com.geopro.app",
+      "supportsTablet": true
+    },
+    "name": "GeoPro",
+    "orientation": "portrait",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "GeoPro uses your location in the background to warn you about upcoming weigh stations.",
+          "locationWhenInUsePermission": "GeoPro uses your location to show nearby truck stops, weigh stations, and diesel prices."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0B0E14",
+          "image": "./assets/images/splash-icon.png",
+          "resizeMode": "contain"
+        }
+      ]
+    ],
+    "scheme": "geopro",
+    "slug": "geopro",
+    "splash": {
+      "backgroundColor": "#0B0E14",
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain"
+    },
+    "userInterfaceStyle": "dark",
+    "version": "1.0.0",
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/images/favicon.png",
+      "output": "static"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0f7777aa-21ec-4bb0-bede-868385a8859f"
+      }
+    },
+    "owner": "haulpro-larry"
+  }
+}
