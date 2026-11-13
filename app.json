@@ -1,0 +1,79 @@
+{
+  "expo": {
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0B0E14",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "package": "com.geopro.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "RECORD_AUDIO",
+        "android.permission.ACCESS_COARSE_LOCATION",
+        "android.permission.ACCESS_FINE_LOCATION",
+        "android.permission.RECORD_AUDIO"
+      ],
+      "predictiveBackGestureEnabled": false
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
+    "icon": "./assets/images/icon.png",
+    "ios": {
+      "bundleIdentifier": "com.geopro.app",
+      "supportsTablet": true
+    },
+    "name": "Hammer Lane Co",
+    "orientation": "portrait",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Hammer Lane Co uses your location in the background to warn you about upcoming weigh stations.",
+          "locationWhenInUsePermission": "Hammer Lane Co uses your location to show nearby truck stops, weigh stations, and diesel prices."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0B0E14",
+          "image": "./assets/images/splash-icon.png",
+          "resizeMode": "contain"
+        }
+      ],
+      "@maplibre/maplibre-react-native",
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "Hammer Lane Co uses the microphone so you can say a destination out loud instead of typing it.",
+          "speechRecognitionPermission": "Hammer Lane Co uses speech recognition to turn your spoken destination into a map search."
+        }
+      ]
+    ],
+    "scheme": ["geopro", "hammerlaneco"],
+    "slug": "geopro",
+    "splash": {
+      "backgroundColor": "#0B0E14",
+      "image": "./assets/images/splash-icon.png",
+      "resizeMode": "contain"
+    },
+    "userInterfaceStyle": "dark",
+    "version": "1.0.0",
+    "web": {
+      "bundler": "metro",
+      "favicon": "./assets/images/favicon.png",
+      "output": "static"
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "0f7777aa-21ec-4bb0-bede-868385a8859f"
+      }
+    },
+    "owner": "haulpro-larry"
+  }
+}

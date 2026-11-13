@@ -1,0 +1,15 @@
+{
+ "total_stops": 7722,
+ "osm_backed": 7662,
+ "non_osm_ids": 60,
+ "elements_queried": 6998,
+ "elements_never_queried": 664,
+ "with_verified_count": 33,
+ "coverage_pct_of_all": 0.43,
+ "coverage_pct_of_queried": 0.47,
+ "size_distribution": {
+  "S": 22,
+  "M": 11
+ },
+ "source": "OSM capacity tag on the stop's own element, via Overpass, 2026-11-08"
+}
